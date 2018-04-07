@@ -26,14 +26,15 @@ a, a:hover, a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: #fff;
+    background: #7ea4d3;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
-.navbar.heading{
-    color:white;
+.navbar-default .navbar-brand{
+    color:white !important;
+    font-weight: 800;
 }
 .navbar-btn {
     box-shadow: none;
