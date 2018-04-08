@@ -9,7 +9,7 @@
 	function addDataToMap(data, map){
 		var dataLayer = L.geoJson(data);
 		dataLayer.bindPopup(function(layer){
-			return layer.feature.properties.name;
+			return '<h1 class="head_sta">'+layer.feature.properties.name+'</h1><h2 class="small_sta">'+layer.feature.properties.stadium+'<p class="tiny_sta">'+layer.feature.properties.define+'</p>';
 		}).addTo(map);
 	}
 
@@ -17,7 +17,7 @@ function addCountryToMap(data, map){
 L.geoJson(data, {
 	style: function(feature){
 		return{
-			fillColor: "#46acae",
+			fillColor: "#932aba",
 			fillOpacity: 0.7,
 			stroke: true,
 			color: "grey",
@@ -25,7 +25,7 @@ L.geoJson(data, {
 		};
 	}
 }).bindPopup(function(layer){
-	return layer.feature.properties.name;
+	return '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1>';
 }).addTo(map);
 
 }
@@ -42,7 +42,7 @@ L.geoJson(data, {
 		};
 	}
 }).bindPopup(function(layer){
-	return layer.feature.properties.name;
+	return '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1>';
 }).addTo(map);
 
 }

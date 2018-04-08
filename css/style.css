@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: white;
+    background: whitesmoke;
     background-size: cover;
 }
 
@@ -181,3 +181,13 @@ top:20vh;
 left:22vw;
 height: 75vh; 
 width:75vw}    
+
+.head_sta{
+    font-size:20px;
+}
+.small_sta{
+    font-size:15px;
+}
+.tiny_sta{
+    font-size:12px;
+}

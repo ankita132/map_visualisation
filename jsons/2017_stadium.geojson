@@ -1,1 +1,26 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"Port-Gentil"},"geometry":{"type":"Point","coordinates":[8.776702880859375,-0.7149510805048169]}},{"type":"Feature","properties":{"name":"Libreville"},"geometry":{"type":"Point","coordinates":[9.4482421875,0.36254640877526295]}},{"type":"Feature","properties":{"name":"Oyem"},"geometry":{"type":"Point","coordinates":[11.572723388671875,1.5969306533257908]}},{"type":"Feature","properties":{"name":"Franceville"},"geometry":{"type":"Point","coordinates":[13.58957290649414,-1.6327936314770728]}}]}
+{"type":"FeatureCollection",
+"features":[{"type":"Feature",
+"properties":{
+"name":"Port-Gentil",
+"stadium":"Stade de Port-Gentil",
+"define":"The Stade de Port-Gentil is a stadium in Port-Gentil, Gabon. This 20,000[1] capacity stadium opened in time for its use in the 2017 Africa Cup of Nations."},
+"geometry":{"type":"Point","coordinates":[8.776702880859375,-0.7149510805048169]}},
+{"type":"Feature",
+"properties":{
+"name":"Libreville",
+"stadium":"Stade d'Angondjé",
+"define":"The stadium build was expected to take 20 months and was funded by the Gabonese and Chinese governments.It was one of four stadiums used for the 2012 Africa Cup of Nations and hosted the competition final. The inaugural football match played here was Gabon facing off against Brazil. Brazil won that match 2–0.It was one of four Gabonese stadia used for the 2017 Africa Cup of Nations and hosted the competition final."},
+"geometry":{"type":"Point","coordinates":[9.4482421875,0.36254640877526295]}},
+{"type":"Feature",
+"properties":{
+"name":"Oyem",
+"stadium":"Stade d'Oyem",
+"define":"The Stade d'Oyem is a stadium in Oyem, Gabon. This 20,500 capacity stadium opened for use in the 2017 Africa Cup of Nations."
+},
+"geometry":{"type":"Point","coordinates":[11.572723388671875,1.5969306533257908]}},
+{"type":"Feature",
+"properties":{"name":"Franceville",
+"stadium":"Stade de Franceville",
+"define":"The Stade de Franceville is a stadium in Franceville, Gabon. The 22,000 capacity stadium was opened in January 2012, in time for its use in the 2012 African Cup of Nations. The opening game was a friendly between Gabon and Sudan.It was one of four Gabonese stadia used for the 2017 Africa Cup of Nations and hosted the competition final."},
+"geometry":{"type":"Point","coordinates":[13.58957290649414,-1.6327936314770728]}}
+]}
