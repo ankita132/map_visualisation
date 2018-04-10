@@ -1,0 +1,17 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{
+	"name":"Malabo",
+"stadium":"Nuevo Estadio de Malabo",
+"define":"The stadium holds 15,250 and opened in 2007. It is currently the home ground of the Equatorial Guinea national football team."
+},"geometry":{"type":"Point","coordinates":[8.8330078125,3.6888551431470478]}},{"type":"Feature","properties":{
+	"name":"Bata",
+"stadium":"Estadio de Bata",
+"define":"Estadio de Bata is a multi-use stadium in Bata, Equatorial Guinea. The stadium was constructed by the Chinese contractor Covec and completed in 2007 with a capacity of 22,000 people."
+},"geometry":{"type":"Point","coordinates":[9.787445068359375,1.8700902342355095]}},{"type":"Feature","properties":{
+	"name":"Mongomo",
+"stadium":"Estadio de Mongomo",
+"define":"The Estadio de Mongomo is a multi-sports stadium in Mongomo, Equatorial Guinea. In November 2014, it was announced the stadium will be a venue for the 2015 Africa Cup of Nations."
+},"geometry":{"type":"Point","coordinates":[11.3104248046875,1.6367402361776067]}},{"type":"Feature","properties":{
+	"name":"Ebebiyín",
+"stadium":"Neuvo Estadio de Ebebiyín",
+"define":"The Neuvo Estadio de Ebebiyín is a multi-sports stadium in Ebebiyín, Equatorial Guinea. In October 2014, the stadium hosted the Copa de la Primera Dama final."
+},"geometry":{"type":"Point","coordinates":[11.332397460937498,2.147324286308352]}}]}
