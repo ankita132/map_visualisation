@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: whitesmoke;
+    background: white;
     background-size: cover;
 }
 
@@ -63,6 +63,7 @@ a, a:hover, a:focus {
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
+    height:100vh;
 }
 
 #sidebar.active {
@@ -177,9 +178,9 @@ a.article, a.article:hover {
 -------------------------------------------------------*/
 #map {
 position: absolute; 
-top:20vh;
+top:5vh;
 left:22vw;
-height: 75vh; 
+height: 90vh; 
 width:75vw}    
 
 .head_sta{
@@ -190,4 +191,21 @@ width:75vw}
 }
 .tiny_sta{
     font-size:12px;
+}
+.btn{
+    margin-left:10px !important;
+}
+.upload {
+  position: relative;
+  overflow: hidden;
+}
+input[type="file"] {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+form{
+    display: none;
 }
