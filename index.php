@@ -79,12 +79,6 @@
       <label for="experience">Experience</label>
       <input type="text" class="form-control" id="experience" placeholder="Add your Experience">
     </div>
-    <div class="form-group col-md-6">
-      <label for="inputstate">Upload Image</label>
-      <button class="file btn btn-lg btn-primary upload">Upload Image
-		<input type="file" name="file"/>
-	  </button>
-    </div>
 <div class="form-group col-md-12">
   <button type="submit" class="btn btn-info">Submit</button>
   </div>

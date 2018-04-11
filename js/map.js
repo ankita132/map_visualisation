@@ -31,7 +31,7 @@ L.geoJson(data, {
 		};
 	}
 }).bindPopup(function(layer){
-	return '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning">View Image</button><button type="button" class="btn btn-info">view Experience</button></p>';
+	return '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning">view Experience</button></p>';
 }).addTo(map);
 
 }
@@ -49,7 +49,7 @@ L.geoJson(data, {
 	}
 }).bindPopup(function(layer){
 
-	return '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning">View Image</button><button type="button" class="btn btn-info">View Experience</button></p>';
+	return '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning">View Experience</button></p>';
 }).addTo(map);
 
 }
@@ -97,7 +97,7 @@ L.geoJson(data, {
 		};
 	}
 }).bindPopup(function(layer){
-	return '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning">View Image</button><button type="button" class="btn btn-info">view Experience</button></p>';
+	return '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning">view Experience</button></p>';
 }).addTo(map);
 
 }
@@ -114,7 +114,7 @@ L.geoJson(data, {
 		};
 	}
 }).bindPopup(function(layer){
-	return '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning">View Image</button><button type="button" class="btn btn-info">View Experience</button></p>';
+	return '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning">View Experience</button></p>';
 }).addTo(map);
 
 }
