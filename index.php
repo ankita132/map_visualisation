@@ -55,24 +55,24 @@
     <div class="form-group col-md-6">
       <label for="inputyear">Year</label>
       <select id="inputyear" class="form-control">
-        <option selected disabled>Choose</option> 
+        <option selected disabled>Choose</option>
         <option>2017</option>
         <option>2015</option>
         <option>2013</option>
-        <option>2012</option>  
+        <option>2012</option>
       </select>
     </div>
   </div>
     <div class="form-group col-md-6">
       <label for="inputcountry">Country</label>
       <select id="inputcountry" class="form-control">
-        <option selected disabled>Choose</option>   
+        <option selected disabled>Choose</option>
       </select>
     </div>
     <div class="form-group col-md-6">
       <label for="inputstadium">Stadium (Optional)</label>
       <select id="inputstadium" class="form-control">
-        <option selected disabled>Choose</option>   
+        <option selected disabled>Choose</option>
       </select>
     </div>
          <div class="form-group col-md-12">
@@ -80,7 +80,7 @@
       <input type="text" class="form-control" id="experience" placeholder="Add your Experience">
     </div>
 <div class="form-group col-md-12">
-  <button type="submit" class="btn btn-info">Submit</button>
+  <button type="submit" class="btn btn-info send">Submit</button>
   </div>
    </form>
   </div>
@@ -90,7 +90,7 @@
 
  <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -105,11 +105,11 @@ time and space. The Total Africa Cup of Nations, officially CAN, also referred t
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-      
+
     </div>
   </div>
 
- 
+
 
         <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
@@ -120,6 +120,6 @@ time and space. The Total Africa Cup of Nations, officially CAN, also referred t
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
                  <script src="./js/map.js"></script>
                  <script src="./js/activity.js"></script>
+                 <script src="./js/backend.js"></script>
     </body>
 </html>
-
