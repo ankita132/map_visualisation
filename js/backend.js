@@ -26,25 +26,4 @@ $(document).ready(function(){
        });
         e.preventDefault();
   });
-
-  $('.view').click(function(e){
-    console.log('he');
-    var name = $(this).closest(".btn-warning").attr("id");
-    $.ajax({
-         data: {
-           "functionname": "fetch",
-           "name" : name
-       },
-         type: "POST",
-         url: "./control.php",
-         success: function(data){
-              console.log(data);
-         },
-         error:function(error){
-          console.log(error);
-        }
-       });
-        e.preventDefault();
-  });
-
 });

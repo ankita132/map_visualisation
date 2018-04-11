@@ -13,7 +13,8 @@ if (isset($_POST['functionname']))
   }
   else if($functionname == 'fetch'){
     $name = $_POST['name'];
-    echo $user->fetch($name);
+    $values = $user->fetch($name);
+    echo json_encode($values);
   }
 }
  ?>

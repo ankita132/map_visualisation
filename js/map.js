@@ -15,7 +15,29 @@ function data_17(){
 	function addDataToMap(data, map){
 		var dataLayer = L.geoJson(data);
 		dataLayer.bindPopup(function(layer){
-			return '<h1 class="head_sta">'+layer.feature.properties.name+'</h1><h2 class="small_sta">'+layer.feature.properties.stadium+'<p class="tiny_sta">'+layer.feature.properties.define+'</p><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.stadium+'">View Experience</button></p>';
+			var myPopup = L.DomUtil.create('div', 'infoWindow');
+			myPopup.innerHTML = '<h1 class="head_sta">'+layer.feature.properties.name+'</h1><h2 class="small_sta">'+layer.feature.properties.stadium+'<p class="tiny_sta">'+layer.feature.properties.define+'</p><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.stadium+'">View Experience</button></p>';
+			$('.btn-warning', myPopup).on('click', function(e){
+	    var name = $(this).closest(".btn-warning").attr("id");
+			var sent = name.toString();
+			console.log(sent);
+	    $.ajax({
+	         data: {
+	           "functionname": "fetch",
+	           "name" : sent
+	       },
+	         type: "POST",
+	         url: "./control.php",
+	         success: function(data){
+	              console.log(data);
+	         },
+	         error:function(error){
+	          console.log(error);
+	        }
+	       });
+	        e.preventDefault();
+	  });
+		return myPopup;
 		}).addTo(map);
 	}
 
@@ -31,7 +53,29 @@ L.geoJson(data, {
 		};
 	}
 }).bindPopup(function(layer){
-	return '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">view Experience</button></p>';
+	var myPopup = L.DomUtil.create('div', 'infoWindow');
+	myPopup.innerHTML = '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">view Experience</button></p>';
+	$('.btn-warning', myPopup).on('click', function(e){
+	var name = $(this).closest(".btn-warning").attr("id");
+	var sent = name.toString();
+	console.log(sent);
+	$.ajax({
+			 data: {
+				 "functionname": "fetch",
+				 "name" : sent
+		 },
+			 type: "POST",
+			 url: "./control.php",
+			 success: function(data){
+						console.log(data);
+			 },
+			 error:function(error){
+				console.log(error);
+			}
+		 });
+			e.preventDefault();
+});
+return myPopup;
 }).addTo(map);
 
 }
@@ -48,8 +92,29 @@ L.geoJson(data, {
 		};
 	}
 }).bindPopup(function(layer){
-
-	return '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">View Experience</button></p>';
+	var myPopup = L.DomUtil.create('div', 'infoWindow');
+	myPopup.innerHTML = '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">View Experience</button></p>';
+	$('.btn-warning', myPopup).on('click', function(e){
+	var name = $(this).closest(".btn-warning").attr("id");
+	var sent = name.toString();
+	console.log(sent);
+	$.ajax({
+			 data: {
+				 "functionname": "fetch",
+				 "name" : sent
+		 },
+			 type: "POST",
+			 url: "./control.php",
+			 success: function(data){
+						console.log(data);
+			 },
+			 error:function(error){
+				console.log(error);
+			}
+		 });
+			e.preventDefault();
+});
+return myPopup;
 }).addTo(map);
 
 }
@@ -81,7 +146,29 @@ function data_15(){
 	function addDataToMap(data, map){
 		var dataLayer = L.geoJson(data);
 		dataLayer.bindPopup(function(layer){
-			return '<h1 class="head_sta">'+layer.feature.properties.name+'</h1><h2 class="small_sta">'+layer.feature.properties.stadium+'<p class="tiny_sta">'+layer.feature.properties.define+'</p><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.stadium+'">View Image</button><button type="button" class="btn btn-info">View Experience</button></p>';
+			var myPopup = L.DomUtil.create('div', 'infoWindow');
+			myPopup.innerHTML = '<h1 class="head_sta">'+layer.feature.properties.name+'</h1><h2 class="small_sta">'+layer.feature.properties.stadium+'<p class="tiny_sta">'+layer.feature.properties.define+'</p><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.stadium+'">View Experience</button></p>';
+			$('.btn-warning', myPopup).on('click', function(e){
+			var name = $(this).closest(".btn-warning").attr("id");
+			var sent = name.toString();
+			console.log(sent);
+			$.ajax({
+					 data: {
+						 "functionname": "fetch",
+						 "name" : sent
+				 },
+					 type: "POST",
+					 url: "./control.php",
+					 success: function(data){
+								console.log(data);
+					 },
+					 error:function(error){
+						console.log(error);
+					}
+				 });
+					e.preventDefault();
+		});
+		return myPopup;
 		}).addTo(map);
 	}
 
@@ -97,7 +184,29 @@ L.geoJson(data, {
 		};
 	}
 }).bindPopup(function(layer){
-	return '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">view Experience</button></p>';
+	var myPopup = L.DomUtil.create('div', 'infoWindow');
+	myPopup.innerHTML = '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">view Experience</button></p>';
+	$('.btn-warning', myPopup).on('click', function(e){
+	var name = $(this).closest(".btn-warning").attr("id");
+	var sent = name.toString();
+	console.log(sent);
+	$.ajax({
+			 data: {
+				 "functionname": "fetch",
+				 "name" : sent
+		 },
+			 type: "POST",
+			 url: "./control.php",
+			 success: function(data){
+						console.log(data);
+			 },
+			 error:function(error){
+				console.log(error);
+			}
+		 });
+			e.preventDefault();
+});
+return myPopup;
 }).addTo(map);
 
 }
@@ -114,7 +223,29 @@ L.geoJson(data, {
 		};
 	}
 }).bindPopup(function(layer){
-	return '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">View Experience</button></p>';
+	var myPopup = L.DomUtil.create('div', 'infoWindow');
+	myPopup.innerHTML = '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">View Experience</button></p>';
+	$('.btn-warning', myPopup).on('click', function(e){
+	var name = $(this).closest(".btn-warning").attr("id");
+	var sent = name.toString();
+	console.log(sent);
+	$.ajax({
+			 data: {
+				 "functionname": "fetch",
+				 "name" : sent
+		 },
+			 type: "POST",
+			 url: "./control.php",
+			 success: function(data){
+						console.log(data);
+			 },
+			 error:function(error){
+				console.log(error);
+			}
+		 });
+			e.preventDefault();
+});
+return myPopup;
 }).addTo(map);
 
 }
