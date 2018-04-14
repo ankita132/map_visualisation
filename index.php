@@ -49,12 +49,12 @@
  <h3 style="text-align: center">User Experience</h3><br><hr>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">User</label>
-      <input type="text" class="form-control" id="user" placeholder="Enter your name">
+      <label for="inputname">User</label>
+      <input type="text" class="form-control" id="user" placeholder="Enter your name" required>
     </div>
     <div class="form-group col-md-6">
       <label for="inputyear">Year</label>
-      <select id="inputyear" class="form-control">
+      <select id="inputyear" class="form-control" required>
         <option selected disabled>Choose</option>
         <option>2017</option>
         <option>2015</option>
@@ -77,7 +77,7 @@
     </div>
          <div class="form-group col-md-12">
       <label for="experience">Experience</label>
-      <input type="text" class="form-control" id="experience" placeholder="Add your Experience">
+      <input type="text" class="form-control" id="experience" placeholder="Add your Experience" required>
     </div>
 <div class="form-group col-md-12">
   <button type="submit" class="btn btn-info send">Submit</button>
@@ -108,6 +108,25 @@ time and space. The Total Africa Cup of Nations, officially CAN, also referred t
 
     </div>
   </div>
+
+  <div class="modal fade" id="myModal2" role="dialog">
+     <div class="modal-dialog">
+
+       <!-- Modal content-->
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <h4 class="modal-title">Experiences</h4>
+         </div>
+         <div class="modal-body">
+          </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+
+     </div>
+   </div>
 
 
 

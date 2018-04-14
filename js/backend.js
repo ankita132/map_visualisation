@@ -4,7 +4,13 @@ $(document).ready(function(){
     var name = $('#user').val();
     var year = $('#inputyear').find(":selected").text();
     var country = $('#inputcountry').find(":selected").text();
+    if(country=='Choose'){
+      country = '';
+    }
     var stadium = $('#inputstadium').find(":selected").text();
+    if(stadium=='Choose'){
+      stadium = '';
+    }
     var experience = $('#experience').val();
     $.ajax({
          data: {
@@ -18,7 +24,8 @@ $(document).ready(function(){
          type: "POST",
          url: "./control.php",
          success: function(data){
-              console.log('data inserted');
+            //  console.log('data inserted');
+            alert('Experience added!!');
          },
          error:function(error){
           console.log(error);

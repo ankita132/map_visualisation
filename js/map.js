@@ -16,7 +16,7 @@ function data_17(){
 		var dataLayer = L.geoJson(data);
 		dataLayer.bindPopup(function(layer){
 			var myPopup = L.DomUtil.create('div', 'infoWindow');
-			myPopup.innerHTML = '<h1 class="head_sta">'+layer.feature.properties.name+'</h1><h2 class="small_sta">'+layer.feature.properties.stadium+'<p class="tiny_sta">'+layer.feature.properties.define+'</p><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.stadium+'">View Experience</button></p>';
+			myPopup.innerHTML = '<h1 class="head_sta">'+layer.feature.properties.name+'</h1><h2 class="small_sta">'+layer.feature.properties.stadium+'<p class="tiny_sta">'+layer.feature.properties.define+'</p><p><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal2" id="'+layer.feature.properties.stadium+'">View Experience</button></p>';
 			$('.btn-warning', myPopup).on('click', function(e){
 	    var name = $(this).closest(".btn-warning").attr("id");
 			var sent = name.toString();
@@ -28,8 +28,12 @@ function data_17(){
 	       },
 	         type: "POST",
 	         url: "./control.php",
-	         success: function(data){
-	              console.log(data);
+	         success: function(response){
+						 response = $.parseJSON(response);
+						 $('#myModal2').find(".modal-body").html("");
+						 for (var i =0; i<response.length; i++){
+							 $('#myModal2').find('.modal-body').append('<p>'+response[i].name+': <i>"'+response[i].experience +'"</i></p>');
+						 }
 	         },
 	         error:function(error){
 	          console.log(error);
@@ -54,7 +58,7 @@ L.geoJson(data, {
 	}
 }).bindPopup(function(layer){
 	var myPopup = L.DomUtil.create('div', 'infoWindow');
-	myPopup.innerHTML = '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">view Experience</button></p>';
+	myPopup.innerHTML = '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal2" id="'+layer.feature.properties.name+'">view Experience</button></p>';
 	$('.btn-warning', myPopup).on('click', function(e){
 	var name = $(this).closest(".btn-warning").attr("id");
 	var sent = name.toString();
@@ -66,8 +70,12 @@ L.geoJson(data, {
 		 },
 			 type: "POST",
 			 url: "./control.php",
-			 success: function(data){
-						console.log(data);
+			 success: function(response){
+				 response = $.parseJSON(response);
+				 $('#myModal2').find(".modal-body").html("");
+				 for (var i =0; i<response.length; i++){
+					 $('#myModal2').find('.modal-body').append('<p>'+response[i].name+': <i>"'+response[i].experience +'"</i></p>');
+				 }
 			 },
 			 error:function(error){
 				console.log(error);
@@ -93,7 +101,7 @@ L.geoJson(data, {
 	}
 }).bindPopup(function(layer){
 	var myPopup = L.DomUtil.create('div', 'infoWindow');
-	myPopup.innerHTML = '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">View Experience</button></p>';
+	myPopup.innerHTML = '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal2" id="'+layer.feature.properties.name+'">View Experience</button></p>';
 	$('.btn-warning', myPopup).on('click', function(e){
 	var name = $(this).closest(".btn-warning").attr("id");
 	var sent = name.toString();
@@ -105,8 +113,12 @@ L.geoJson(data, {
 		 },
 			 type: "POST",
 			 url: "./control.php",
-			 success: function(data){
-						console.log(data);
+			 success: function(response){
+				 response = $.parseJSON(response);
+				 $('#myModal2').find(".modal-body").html("");
+				 for (var i =0; i<response.length; i++){
+					 $('#myModal2').find('.modal-body').append('<p>'+response[i].name+': <i>"'+response[i].experience +'"</i></p>');
+				 }
 			 },
 			 error:function(error){
 				console.log(error);
@@ -147,7 +159,7 @@ function data_15(){
 		var dataLayer = L.geoJson(data);
 		dataLayer.bindPopup(function(layer){
 			var myPopup = L.DomUtil.create('div', 'infoWindow');
-			myPopup.innerHTML = '<h1 class="head_sta">'+layer.feature.properties.name+'</h1><h2 class="small_sta">'+layer.feature.properties.stadium+'<p class="tiny_sta">'+layer.feature.properties.define+'</p><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.stadium+'">View Experience</button></p>';
+			myPopup.innerHTML = '<h1 class="head_sta">'+layer.feature.properties.name+'</h1><h2 class="small_sta">'+layer.feature.properties.stadium+'<p class="tiny_sta">'+layer.feature.properties.define+'</p><p><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal2" id="'+layer.feature.properties.stadium+'">View Experience</button></p>';
 			$('.btn-warning', myPopup).on('click', function(e){
 			var name = $(this).closest(".btn-warning").attr("id");
 			var sent = name.toString();
@@ -159,8 +171,12 @@ function data_15(){
 				 },
 					 type: "POST",
 					 url: "./control.php",
-					 success: function(data){
-								console.log(data);
+					 success: function(response){
+						 response = $.parseJSON(response);
+						 $('#myModal2').find(".modal-body").html("");
+						 for (var i =0; i<response.length; i++){
+							 $('#myModal2').find('.modal-body').append('<p>'+response[i].name+': <i>"'+response[i].experience +'"</i></p>');
+						 }
 					 },
 					 error:function(error){
 						console.log(error);
@@ -185,7 +201,7 @@ L.geoJson(data, {
 	}
 }).bindPopup(function(layer){
 	var myPopup = L.DomUtil.create('div', 'infoWindow');
-	myPopup.innerHTML = '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">view Experience</button></p>';
+	myPopup.innerHTML = '<h1 class="head_sta">Participating Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal2" id="'+layer.feature.properties.name+'">view Experience</button></p>';
 	$('.btn-warning', myPopup).on('click', function(e){
 	var name = $(this).closest(".btn-warning").attr("id");
 	var sent = name.toString();
@@ -197,8 +213,12 @@ L.geoJson(data, {
 		 },
 			 type: "POST",
 			 url: "./control.php",
-			 success: function(data){
-						console.log(data);
+			 success: function(response){
+				 response = $.parseJSON(response);
+				 $('#myModal2').find(".modal-body").html("");
+				 for (var i =0; i<response.length; i++){
+					 $('#myModal2').find('.modal-body').append('<p>'+response[i].name+': <i>"'+response[i].experience +'"</i></p>');
+				 }
 			 },
 			 error:function(error){
 				console.log(error);
@@ -224,7 +244,7 @@ L.geoJson(data, {
 	}
 }).bindPopup(function(layer){
 	var myPopup = L.DomUtil.create('div', 'infoWindow');
-	myPopup.innerHTML = '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" id="'+layer.feature.properties.name+'">View Experience</button></p>';
+	myPopup.innerHTML = '<h1 class="head_sta">Winning Nation: <b>'+layer.feature.properties.name+'</b></h1><p><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal2" id="'+layer.feature.properties.name+'">View Experience</button></p>';
 	$('.btn-warning', myPopup).on('click', function(e){
 	var name = $(this).closest(".btn-warning").attr("id");
 	var sent = name.toString();
@@ -236,8 +256,12 @@ L.geoJson(data, {
 		 },
 			 type: "POST",
 			 url: "./control.php",
-			 success: function(data){
-						console.log(data);
+			 success: function(response){
+				 response = $.parseJSON(response);
+				 $('#myModal2').find(".modal-body").html("");
+				 for (var i =0; i<response.length; i++){
+					 $('#myModal2').find('.modal-body').append('<p>'+response[i].name+': <i>"'+response[i].experience +'"</i></p>');
+				 }
 			 },
 			 error:function(error){
 				console.log(error);
