@@ -19,6 +19,8 @@ function data_17(){
 			myPopup.innerHTML = '<h1 class="head_sta">'+layer.feature.properties.name+'</h1><h2 class="small_sta">'+layer.feature.properties.stadium+'<p class="tiny_sta">'+layer.feature.properties.define+'</p><p><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal2" id="'+layer.feature.properties.stadium+'">View Experience</button></p>';
 			$('.btn-warning', myPopup).on('click', function(e){
 	    var name = $(this).closest(".btn-warning").attr("id");
+			var year = $('.year').attr("id");
+			console.log(year);
 			var sent = name.toString();
 			console.log(sent);
 	    $.ajax({
