@@ -29,7 +29,7 @@
                     <li class="active">
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Years</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a class="year" id="2017" href="#">2017</a></li>
+                            <li><a class="year clicked" id="2017" href="#">2017</a></li>
                             <li><a class="year" id="2015" href="#">2015</a></li>
                             <li><a class="year" id="2013" href="#">2013</a></li>
                             <li><a class="year" id="2012" href="#">2012</a></li>

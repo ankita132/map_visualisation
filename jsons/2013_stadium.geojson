@@ -1,0 +1,26 @@
+{"type":"FeatureCollection","features":[{"type":"Feature",
+  "properties":{
+    "name":"Johannesburg",
+    "stadium":"FNB Stadium",
+    "define":"First National Bank Stadium or simply FNB Stadium, also known as Soccer City and The Calabash, is a stadium located in Nasrec, bordering the Soweto area of Johannesburg, South Africa."
+    },"geometry":{"type":"Point","coordinates":[28.0810546875,-26.31311263768267]}},
+    {"type":"Feature","properties":{
+      "name":"Durban",
+      "stadium":"Moses Mabhida Stadium",
+      "define":"The Moses Mabhida Stadium is a stadium in Durban, South Africa, named after Moses Mabhida, a former General Secretary of the South African Communist Party. It is a multi-use stadium."
+      },"geometry":{"type":"Point","coordinates":[31.013717651367188,-29.857914952075095]}},
+      {"type":"Feature","properties":{
+        "name":"Port Elizabeth",
+        "stadium":"Nelson Mandela Bay Stadium",
+        "define":"The Nelson Mandela Bay Stadium is a 46,000-seater stadium in Port Elizabeth, Eastern Cape, South Africa. It regularly hosts large-scale rugby union and football (soccer) matches."
+        },"geometry":{"type":"Point","coordinates":[25.6201171875,-33.9433599465788]}},
+        {"type":"Feature","properties":{
+          "name":"Nelspruit",
+          "stadium":"Mbombela Stadium",
+          "define":"The Mbombela Stadium is an all-seater, 40,929-seat stadium and was one of the ten venues for the FIFA World Cup 2010. It is located on open land six kilometres west of Mbombela, South Africa, the capital of the Mpumalanga province."
+          },"geometry":{"type":"Point","coordinates":[30.980758666992184,-25.480161844707876]}},
+          {"type":"Feature","properties":{
+            "name":"Rustenburg",
+            "stadium":"Royal Bafokeng Stadium",
+            "define":"The Royal Bafokeng Sports Palace is a football, rugby and athletics stadium in Phokeng near Rustenburg, South Africa. It was built and is managed by the Royal Bafokeng Nation."
+            },"geometry":{"type":"Point","coordinates":[27.2625732421875,-25.621715959845726]}}]}

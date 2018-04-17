@@ -7,7 +7,12 @@ $(document).ready(function(){
 		$('#map').fadeIn('fast');
 		$('.form-data').fadeOut('fast');
 	});
-		
+
+	$(".year").click(function () {
+		 $('.year').removeClass("clicked");
+	   $(this).toggleClass("clicked");
+	});
+
 	$('#inputyear').on('change', function() {
    		var year = $(this).val();
    		if(year == "2017"){
@@ -15,13 +20,13 @@ $(document).ready(function(){
    			$('#inputstadium').html('');
 		$.getJSON('./jsons/2017_participate.geojson', function(data){
 			$('#inputcountry').append('<option selected disabled value="">Choose</option>');
-			for(var i = 0; i< data.features.length; i++){   
+			for(var i = 0; i< data.features.length; i++){
 			   $('#inputcountry').append('<option value="">' + data.features[i].properties.name + '</option>');
 			}
 			});
 		$.getJSON('./jsons/2017_stadium.geojson', function(data){
 			$('#inputstadium').append('<option selected disabled value="">Choose</option>');
-			for(var i = 0; i< data.features.length; i++){   
+			for(var i = 0; i< data.features.length; i++){
 			   $('#inputstadium').append('<option value="">' + data.features[i].properties.stadium + '</option>');
 			}
 			});
@@ -32,17 +37,51 @@ $(document).ready(function(){
    			$('#inputstadium').html('');
 		$.getJSON('./jsons/2015_participate.geojson', function(data){
 			$('#inputcountry').append('<option selected disabled value="">Choose</option>');
-			for(var i = 0; i< data.features.length; i++){   
+			for(var i = 0; i< data.features.length; i++){
 			   $('#inputcountry').append('<option value="">' + data.features[i].properties.name + '</option>');
 			}
 			});
 		$.getJSON('./jsons/2015_stadium.geojson', function(data){
 			$('#inputstadium').append('<option selected disabled value="">Choose</option>');
-			for(var i = 0; i< data.features.length; i++){   
+			for(var i = 0; i< data.features.length; i++){
+			   $('#inputstadium').append('<option value="">' + data.features[i].properties.stadium + '</option>');
+			}
+			});
+	}
+
+	if(year == "2013"){
+			$('#inputcountry').html('');
+   			$('#inputstadium').html('');
+		$.getJSON('./jsons/2013_participate.geojson', function(data){
+			$('#inputcountry').append('<option selected disabled value="">Choose</option>');
+			for(var i = 0; i< data.features.length; i++){
+			   $('#inputcountry').append('<option value="">' + data.features[i].properties.name + '</option>');
+			}
+			});
+		$.getJSON('./jsons/2013_stadium.geojson', function(data){
+			$('#inputstadium').append('<option selected disabled value="">Choose</option>');
+			for(var i = 0; i< data.features.length; i++){
+			   $('#inputstadium').append('<option value="">' + data.features[i].properties.stadium + '</option>');
+			}
+			});
+	}
+
+	if(year == "2012"){
+			$('#inputcountry').html('');
+   			$('#inputstadium').html('');
+		$.getJSON('./jsons/2012_participate.geojson', function(data){
+			$('#inputcountry').append('<option selected disabled value="">Choose</option>');
+			for(var i = 0; i< data.features.length; i++){
+			   $('#inputcountry').append('<option value="">' + data.features[i].properties.name + '</option>');
+			}
+			});
+		$.getJSON('./jsons/2012_stadium.geojson', function(data){
+			$('#inputstadium').append('<option selected disabled value="">Choose</option>');
+			for(var i = 0; i< data.features.length; i++){
 			   $('#inputstadium').append('<option value="">' + data.features[i].properties.stadium + '</option>');
 			}
 			});
 	}
 	});
-	
+
 });

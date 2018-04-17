@@ -17,9 +17,12 @@ p {
     line-height: 1.7em;
     color: #999;
 }
-
-a, a:hover, a:focus {
-    color: inherit;
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -95,7 +98,7 @@ a, a:hover, a:focus {
     background: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+#sidebar ul li.active > a[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
 }
@@ -177,11 +180,11 @@ a.article, a.article:hover {
     MAP
 -------------------------------------------------------*/
 #map {
-position: absolute; 
+position: absolute;
 top:5vh;
 left:22vw;
-height: 90vh; 
-width:75vw}    
+height: 90vh;
+width:75vw}
 
 .head_sta{
     font-size:20px;
@@ -208,4 +211,9 @@ input[type="file"] {
 }
 form{
     display: none;
+}
+
+.clicked {
+    color: #7386D5;
+    background: #fff;
 }

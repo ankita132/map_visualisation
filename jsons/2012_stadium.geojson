@@ -1,0 +1,23 @@
+{"type":"FeatureCollection","features":[{"type":"Feature",
+  "properties":{
+    "name":"Bata",
+  "stadium":"Estadio de Bata",
+  "define":"Estadio de Bata is a multi-use stadium in Bata, Equatorial Guinea. The stadium was constructed by the Chinese contractor Covec and completed in 2007 with a capacity of 22,000 people."
+    },
+    "geometry":{"type":"Point","coordinates":[9.771995544433594,1.8680313936525699]}},
+    {"type":"Feature",
+      "properties":{
+        "name":"Libreville",
+        "stadium":"Stade d'Angondjé",
+        "define":"The stadium build was expected to take 20 months and was funded by the Gabonese and Chinese governments.It was one of four stadiums used for the 2012 Africa Cup of Nations and hosted the competition final."
+        },"geometry":{"type":"Point","coordinates":[9.453563690185545,0.39172821035758837]}},
+        {"type":"Feature","properties":{
+          "name":"Franceville",
+          "stadium":"Stade de Franceville",
+          "define":"The Stade de Franceville is a stadium in Franceville, Gabon. The 22,000 capacity stadium was opened in January 2012, in time for its use in the 2012 African Cup of Nations. The opening game was a friendly between Gabon and Sudan.It was one of four Gabonese stadia used for the 2017 Africa Cup of Nations and hosted the competition final."
+          },"geometry":{"type":"Point","coordinates":[13.60107421875,-1.6367402361776067]}},
+          {"type":"Feature","properties":{
+            "name":"Malabo",
+          "stadium":"Estadio de Malabo",
+          "define":"The stadium holds 15,250 and opened in 2007. It is currently the home ground of the Equatorial Guinea national football team."
+            },"geometry":{"type":"Point","coordinates":[8.78631591796875,3.7546340909109253]}}]}
