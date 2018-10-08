@@ -40,9 +40,9 @@ function data_17(){
 	         error:function(error){
 	          console.log(error);
 	        }
-	       });
+	});
 	        e.preventDefault();
-	  });
+	});
 		return myPopup;
 		}).addTo(map);
 	}
